@@ -1,1 +1,2 @@
-console.log('I need soul, skokoko help')
+import "./main.css";
+console.log('TESEIFEIFFHING');

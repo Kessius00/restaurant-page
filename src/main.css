@@ -1,0 +1,9 @@
+footer{
+    display: flex;
+    
+}
+
+body{
+    margin: 0;
+    background-color: brown;
+}
