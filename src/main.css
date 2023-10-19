@@ -33,12 +33,23 @@ h1{
 
 .footer{
     display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
+
+.footer a{
+    color: antiquewhite;
+}
 .main{
-    height: 700px;
-    /* display: flex; */
-    /* align-items: center; */
+    height: 500px;
+    /* margin-top: -20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./assets/vesuvio.webp);
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -46,10 +57,10 @@ h1{
 
     width: max(400px,70%);
     height: 30%;
-    margin: auto;
-    margin-top: 60px;
+    /* margin: auto; */
+    margin-top: 150px;
     padding: 40px;
-    background-color: rgba(0,0,0,0.1);
-    font-size: 1.4em;
+    background-color: rgba(0,0,0,0.8);
+    font-size: 1.3em;
 }
 
