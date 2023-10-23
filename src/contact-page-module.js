@@ -1,7 +1,7 @@
 function createContact(){
     const contact = document.createElement("div");
     contact.classList.add("contact");
-
+    
     const contactTitle = document.createElement("h1");
     contactTitle.classList.add("contact-title");
     contactTitle.textContent = "Contact Us";
