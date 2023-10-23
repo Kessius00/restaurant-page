@@ -3,6 +3,7 @@
 
 body{
     margin: 0;
+    padding: 0;
     background-color: #8a4e4e;
     font-family: 'Forum','Rosarivo', cursive;
     color:antiquewhite;
@@ -48,7 +49,7 @@ button:active{
 }
 
 .header{
-    margin: 10px;
+    padding: 10px;
     display: flex;
     height: 185px;
     flex-direction: column;
