@@ -18,9 +18,28 @@ h1{
 .header{
     margin: 10px;
     display: flex;
+    height: 185px;
     flex-direction: column;
     align-items: center;
     background-color: rgba(0,0,0,0.5);
+}
+
+.hidden{
+    display: none;
+}
+
+.cover{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    
+}
+
+.cover:hover{
+    background-color: rgba(0,0,0,0.4);
 }
 
 .header ul{
@@ -33,35 +52,92 @@ h1{
     padding-left: 0px;
     background-color: rgba(0,0,0,0.1);
     padding: 5px;
+    user-select:none;
+}
+
+li{
+    position: relative;
+    cursor:pointer;
+    padding: 5px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer{
     background-color: rgba(0,0,0,0.5);
     display: flex;
     align-items: center;
+    position:fixed;
     justify-content: center;
     margin: auto;
-    height: auto;
-    
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .footer a{
     color: antiquewhite;
 
 }
-.main{
-    height: 500px;
+
+.main-menu{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(./assets/vesuvio.webp);
-    background-position: center;
-    background-size: cover;
+}
+
+.menu-container{
+    padding: 20px;
+    width: max(40vw, 700px);
+}
+
+
+.main-home{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    
 
 }
 
+.menu-item{
+    background-color: rgba(0,0,0,0.1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+h2{
+    font-size: 1.5em;
+}
+
+.menu-item p{
+    font-size: 1.3em;
+}
+
+.menu-item img{
+    /* display: none; */
+    width: 200px;
+    height: auto;
+}
+
+.price{
+    font-weight: 200;
+    font-style: italic;
+}
+
+.main-home{
+    background-image: url(./assets/vesuvio.webp);
+    background-position: center;
+    background-size: cover;
+}
+
 #restaurant-text{
-    margin-top: 150px;
+    margin: auto;
     padding: 40px;
     background-color: rgba(0,0,0,0.8);
     font-size: 1.7em;
