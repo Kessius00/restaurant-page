@@ -2,6 +2,11 @@ function createContact(){
     const contact = document.createElement("div");
     contact.classList.add("contact");
 
+    const contactTitle = document.createElement("h1");
+    contactTitle.classList.add("contact-title");
+    contactTitle.textContent = "Contact Us";
+
+    contact.appendChild(contactTitle);
     contact.appendChild(contactCard("Artie Bucco", "Chef", "555-3233-232A", "artieBucco@notFake.com"));
     contact.appendChild(contactCard("Charmaine Bucco", "Manager", "555-2323-222E", "charmaineBucco@notFake.com"));
     

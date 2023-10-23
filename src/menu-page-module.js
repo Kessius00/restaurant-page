@@ -2,6 +2,11 @@ function createMenu(){
     const menu = document.createElement("div");
     menu.classList.add("menu", "main-menu");
 
+    const menuTitle = document.createElement("h1");
+    menuTitle.classList.add("menu-title");
+    menuTitle.textContent = "Menu";
+
+
     const menuContainer = document.createElement("div");
     menuContainer.classList.add("menu-container");
 
@@ -14,7 +19,7 @@ function createMenu(){
     menuContainer.appendChild(createMenuItem("Pizza", "With ingredients of your choosing. You name it, we have it.","$21",
     "./assets/pexels-kristina-paukshtite-1146760.jpg", "Pizza"));
 
-
+    menu.appendChild(menuTitle);
     menu.appendChild(menuContainer);
 
 
