@@ -15,6 +15,30 @@ h1{
     font-family: 'Rosarivo', 'Forum', cursive;
 }
 
+nav{
+    margin-top: 7px;
+}
+
+button{
+    background-color: rgba(0,0,0,0.4);
+    color: antiquewhite;
+    padding: 10px 30px;
+    border: 0;
+    font-size: 1.4em;
+    font-family: "Forum", 'Rosarivo', cursive;
+    user-select: none;
+    cursor:pointer;
+}
+
+button:hover{
+    transition: transform .4s ease-in-out;
+    transform: scale(0.99) translateY(8px);
+}
+
+button:active{
+    text-decoration: underline;
+}
+
 .header{
     margin: 10px;
     display: flex;
@@ -86,11 +110,15 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0,0,0,0.1);
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .menu-container{
-    padding: 20px;
     width: max(40vw, 700px);
+
 }
 
 
@@ -100,15 +128,50 @@ li{
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    
 
 }
 
-.menu-item{
+.menu-title, .contact-title{
+    font-size: 2.5em;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    margin: 0;
+}
+
+.contact{
     background-color: rgba(0,0,0,0.1);
+    margin:auto;
+    margin-top: 100px;
+    padding:50px 200px;
+    border-radius: 8px;
+
+}
+
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    font-style: italic;
+}
+
+
+.menu-item{
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
 }
 h2{
