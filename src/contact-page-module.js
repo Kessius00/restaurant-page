@@ -1,26 +1,41 @@
-const headerDiv = document.createElement("div");
-headerDiv.className = "header";
-headerDiv.innerHTML = `<h1>Vesuvio</h1><ul>
-<li>Home
-    <div class="coverhome cover hidden"></div>
-</li>
-<li>Menu
-    <div class="covermenu cover hidden"></div>
-</li>
-<li>Contact
-    <div class="covercontact cover"></div>
-</li>
-</ul>`;
+function createContact(){
+    const contact = document.createElement("div");
+    contact.classList.add("contact");
 
-const mainDiv = document.createElement("div");
-mainDiv.className = "main main-contact";
-mainDiv.id = "main";
-mainDiv.innerHTML = ``;
+    contact.appendChild(contactCard("Artie Bucco", "Chef", "555-3233-232A", "artieBucco@notFake.com"));
+    contact.appendChild(contactCard("Charmaine Bucco", "Manager", "555-2323-222E", "charmaineBucco@notFake.com"));
+    
+    return contact
+}
 
-const footerDiv = document.createElement("div");
-footerDiv.className = "footer";
-footerDiv.innerHTML = `<p>made by <a href="http://github.com/Kessius00" target="_blank" rel="noopener noreferrer">Kessius</a></p>`;
+function contactCard(nameTitle, expertise, phone, mail){
+    const card = document.createElement("div");
+    card.classList.add("contact-card")
+
+    const contactName = document.createElement("h3");
+    contactName.textContent = nameTitle;
+
+    card.appendChild(contactName);
+    card.appendChild(createParagraph(expertise));
+    card.appendChild(createParagraph(phone));
+    card.appendChild(createParagraph(mail));
+
+    return card
+
+}
+
+function createParagraph(text){
+    const paragraph = document.createElement("p");
+    paragraph.textContent = text;
+    return paragraph
+}
+
+function loadContact(){
+    const main = document.getElementById("main");
+    if (main.classList.contains("main-home")) main.classList.remove("main-home");
+    main.textContent = "";
+    main.appendChild(createContact());
+}
 
 
-export {headerDiv, mainDiv, footerDiv};
-
+export default loadContact;

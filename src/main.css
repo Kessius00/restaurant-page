@@ -34,12 +34,12 @@ h1{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.4);
     
 }
 
-.cover:hover{
-    background-color: rgba(0,0,0,0.4);
+li:hover{
+    background-color: rgba(0,0,0,0.1);
 }
 
 .header ul{
@@ -120,7 +120,6 @@ h2{
 }
 
 .menu-item img{
-    /* display: none; */
     width: 200px;
     height: auto;
 }
@@ -130,6 +129,10 @@ h2{
     font-style: italic;
 }
 
+.home{
+    margin: auto;
+}
+
 .main-home{
     background-image: url(./assets/vesuvio.webp);
     background-position: center;
@@ -137,9 +140,9 @@ h2{
 }
 
 #restaurant-text{
-    margin: auto;
     padding: 40px;
     background-color: rgba(0,0,0,0.8);
     font-size: 1.7em;
+
 }
 
